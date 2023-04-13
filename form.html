@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <meta name="author" content="Yuriy Zudikhin" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+
+    <header class="header">
+      <div class="container">
+        <div class="header_block">
+          <a class="header_block_logo" href="#">
+            <img src="img/header/logo.svg" alt="">
+          </a>
+          <ul>
+            <li>
+              <a href="#">Наши услуги</a>
+            </li>
+            <li>
+              <a href="#">База моделей</a>
+            </li>
+            <li>
+              <a href="#">Портфолио</a>
+            </li>
+            <li>
+              <a href="#">Об агенстве</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+            <li>
+              <a href="#">Для моделей</a>
+            </li>
+          </ul>
+          <div class="header_block_btn">
+            <span>Оставить заявку</span>
+          </div>
+          <div class="header_block_burger">
+            <div class="line-menu half start"></div>
+            <div class="line-menu"></div>
+            <div class="line-menu half end"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="form">
+      <video autoplay muted loop>
+        <source src="img/back_video.mp4" type="video/mp4">
+      </video>
+      <div class="container">
+        <div class="form_block">
+          <div class="form_block_top">
+            <h2>СТАТЬ МОДЕЛЬЮ</h2>
+            <p>Заполните анкету и станьте моделью AV-MODELS</p>
+          </div>
+          <div class="form_block_body">
+            <h4>Анкета для соискателей</h4>
+            <form action="">
+              <span>
+                <select>
+                  <option value="Пол">Пол</option>
+                  <option value="Мужской">Мужской</option>
+                  <option value="Женский">Женский</option>
+                </select>
+              </span>
+              <span>
+                <select>
+                  <option value="Пол">Тип внешности</option>
+                  <option value="Тип внешности 1">Тип внешности 1</option>
+                  <option value="Тип внешности 2">Тип внешности 2</option>
+                </select>
+              </span>
+              <span>
+                <input type="text" placeholder="Рост">
+              </span>
+              <span>
+                <input type="text" placeholder="Размер одежды">
+              </span>
+              <span>
+                <input type="text" placeholder="Размер бюста">
+              </span>
+              <span>
+                <input type="text" placeholder="Цвет волос">
+              </span>
+              <span>
+                <input type="text" placeholder="Длина волос">
+              </span>
+              <span>
+                <input type="text" placeholder="Знание иностранных языков">
+              </span>
+              <span>
+                <input type="text" placeholder="ФИО">
+              </span>
+              <span>
+                <input type="text" placeholder="Гражданство">
+              </span>
+              <span>
+                <input type="text" placeholder="Город проживания">
+              </span>
+              <span>
+                <input type="text" placeholder="Дата рождения">
+              </span>
+              <span>
+                <input type="email" placeholder="Ваш E-mail">
+              </span>
+              <span>
+                <input type="tel" placeholder="Ваш телефон">
+              </span>
+              <div class="form_block_body_final">
+                <p>Все пункты являются обязательными для заполнения!</p>
+                <input type="submit" value="Отправить">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="form_back"></div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer_block">
+          <a class="footer_block_tel" href="tel:+79111110118">+7 (911) 111-01-18</a>
+          <div class="footer_block_social">
+            <a href="#">
+              <img src="img/footer/wap.svg" alt="">
+            </a>
+            <a href="#">
+              <img src="img/footer/telegram.svg" alt="">
+            </a>
+            <a href="#">
+              <img src="img/footer/insta.svg" alt="">
+            </a>
+          </div>
+          <a class="footer_block_politic" href="#">Политика обработки персональных данных</a>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/jquery.nice-select.js"></script>
+    <script src="js/main.js"></script>
+    
+  </body>
+</html>
+
+<script>
+  $('select').niceSelect();
+</script>
