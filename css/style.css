@@ -1671,6 +1671,9 @@ input:focus {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+.portfolio_block_body::-webkit-scrollbar {
+  display: none;
+}
 .portfolio_block_body::after {
   content: "";
   position: absolute;
