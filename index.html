@@ -136,3 +136,26 @@
     
   </body>
 </html>
+
+<script>
+
+  var slider = $("body");
+
+  slider.on('wheel', (function(e) {
+    e.preventDefault();
+
+    clearTimeout(scroll);
+    scroll = setTimeout(function(){
+      scrollCount = 0;
+    }, 200);
+    if(scrollCount) return 0;
+    scrollCount = 1;
+
+    if (e.originalEvent.deltaY < 0) {
+      $(".main_slider").slick('slickNext');
+    } else {
+      $(".main_slider").slick('slickPrev');
+    }
+  }));
+
+</script>

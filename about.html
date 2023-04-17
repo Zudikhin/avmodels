@@ -54,7 +54,6 @@
       <video autoplay muted loop>
         <source src="img/back_video.mp4" type="video/mp4">
       </video>
-      
       <div class="about_block">
         <div class="about_block_trust">
           <div class="container">
@@ -184,8 +183,6 @@
       <div class="about_back"></div>
     </section>
 
-    <div id="test"></div>
-
     <footer class="footer">
       <div class="container">
         <div class="footer_block">
@@ -212,24 +209,3 @@
     
   </body>
 </html>
-
-<script>
-
-  var slider = $("body");
-
-  slider.on('wheel', (function(e) {
-    e.preventDefault();
-
-    clearTimeout(scroll);
-    scroll = setTimeout(function(){scrollCount=0;}, 200);
-    if(scrollCount) return 0;
-    scrollCount=1;
-
-    if (e.originalEvent.deltaY < 0) {
-      $(".about_block").slick('slickNext');
-    } else {
-      $(".about_block").slick('slickPrev');
-    }
-  }));
-
-</script>
