@@ -1884,7 +1884,7 @@ input:focus {
           box-sizing: border-box;
   height: calc(100vh - 117px);
   position: relative;
-  padding-top: 74px;
+  padding-top: 67px;
 }
 .catalog::after {
   content: "";
@@ -1909,6 +1909,13 @@ input:focus {
 .catalog_block {
   position: relative;
   z-index: 2;
+  height: calc(100vh - 191px);
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.catalog_block::-webkit-scrollbar {
+  display: none;
 }
 .catalog_block_top h2 {
   font-family: "Montserrat", sans-serif;
@@ -2020,17 +2027,10 @@ input:focus {
   display: none;
 }
 .catalog_block_list {
-  height: calc(100vh - 436px);
   position: relative;
-  overflow-y: scroll;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding-bottom: 97px;
-}
-.catalog_block_list::-webkit-scrollbar {
-  display: none;
 }
 .catalog_block_list_item {
   display: -webkit-box;
@@ -2535,6 +2535,7 @@ input:focus {
   border: 1px solid rgba(255, 255, 255, 0.16);
   padding: 15px 0px;
   z-index: 2;
+  height: 116px;
 }
 .footer_block {
   display: -webkit-box;
