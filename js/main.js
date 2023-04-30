@@ -2,7 +2,17 @@ $(document).ready(function () {
     "use strict";
 
 	$(".header_block_burger").click(function() {
-		$(this).toggleClass("active");
+		$(".mob_dropdown").addClass("active");
+	});
+
+	$(".mob_dropdown_close").click(function() {
+		$(".mob_dropdown").removeClass("active");
+	});
+
+	$(".mob_dropdown_callback").click(function() {
+		$(".mob_dropdown").removeClass("active");
+		$(".back_modal").addClass("active");
+		$(".modal_demonstration").addClass("active");
 	});
 
 	$('.main_slider').slick({
@@ -31,9 +41,16 @@ $(document).ready(function () {
 		arrows: false
 	});
 
+	$(".header_block_btn").click(function() {
+		$(".back_modal").addClass("active");
+		$(".modal_demonstration").addClass("active");
+	});
+
 	$(".back_modal").click(function() {
 		$(this).removeClass("active");
+		$(".modal_thank").removeClass("active");
 		$(".portfolio_modal").removeClass("active");
+		$(".modal_demonstration").removeClass("active");
 	});
 
 	$(".portfolio_modal_close").click(function() {
@@ -122,5 +139,23 @@ $(document).ready(function () {
 			$("#modelCurrent").text(insertCurrent);
 		}
 	});
+
+	$(".modal_demonstration_close").click(function() {
+		$(".modal_demonstration").removeClass("active");
+		$(".back_modal").removeClass("active");
+	});
+
+	$(".modal_thank_close").click(function() {
+		$(".modal_thank").removeClass("active");
+		$(".back_modal").removeClass("active");
+	});
+
+	$('.modal_demonstration_form_accept input').change(function() {
+        if(this.checked) {
+            $('.modal_demonstration input[type="submit"]').removeClass("disabled");
+        } else {
+			$('.modal_demonstration input[type="submit"]').addClass("disabled");
+		}     
+    });
 
 });
